@@ -2,6 +2,7 @@
 
 use App\Models\Category;
 use App\Models\Expense;
+use App\Models\Income;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,8 @@ Route::get('/categories', function () {
 
 Route::get('/expenses', function () {
     return Expense::all();
+});
+
+Route::get('/incomes', function () {
+    return Income::all();
 });
